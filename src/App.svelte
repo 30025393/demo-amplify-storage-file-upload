@@ -54,6 +54,7 @@
         </nav>
       </div>
     </div>
+    <h2>You are logged in as {$authStore.username} <button type="button" on:click={logout}>Log Out</button></h2>
     <Main />
     <a
       class="mb-16 flex justify-center"
