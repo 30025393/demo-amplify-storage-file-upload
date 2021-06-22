@@ -181,17 +181,7 @@
                         </td>
                       </tr>
                     {/each}
-                    <tr class="bg-white">
-                      <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-teal-700">
-                        <button class="flex items-center border-0" on:click={createFolder}>
-                          <svg class="w-6 mr-2 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                          </svg>
-                          Create New Folder</button>
-                      </td>
-                    </tr>
                     <!-- Odd row -->
-
                     {#each files as file, i}
                       <tr class="bg-white" class:bg-gray-50={i % 2}>
                         <td class="flex px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
