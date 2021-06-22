@@ -1,6 +1,7 @@
 import App from './App.svelte';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react-native'
 Amplify.configure(awsconfig);
 
 const app = new App({
@@ -10,4 +11,4 @@ const app = new App({
 
 window.app = app;
 
-export default app;
+export default withAuthenticator(App)
