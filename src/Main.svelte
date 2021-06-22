@@ -87,7 +87,7 @@
 </script>
 
 <svelte:head>
-	<title>AmpliBox: {currentPath || 'Root'}</title>
+	<title>Cool AmpliBox</title>
 </svelte:head>
 
 <Toast {toast} />
