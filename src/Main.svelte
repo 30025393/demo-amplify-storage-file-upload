@@ -1,5 +1,6 @@
 <script>
   import { Storage } from "aws-amplify";
+  import { store as authStore, logout } from './stores/auth.js';
   import { formatBytes, processStorageList } from "./utils.js";
   import Toast from "./Toast.svelte";
   import DownloadButton from "./DownloadButton.svelte";
