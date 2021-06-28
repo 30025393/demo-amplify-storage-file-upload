@@ -88,7 +88,7 @@
 </script>
 
 <svelte:head>
-	<title>Cool AmpliBox</title>
+	<title>Test AmpliBox</title>
 </svelte:head>
 
 <Toast {toast} />
@@ -97,7 +97,7 @@
   <div class="bg-white">
     <div class="max-w-screen-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="text-center">
-        <h1 class="text-base leading-6 font-semibold text-indigo-600 tracking-wide uppercase">cool beanz</h1>
+        <h1 class="text-base leading-6 font-semibold text-indigo-600 tracking-wide uppercase">AT3 Cloud SaaS</h1>
         <p class="mt-1 text-4xl leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">AmpliBox</p>
         <p class="max-w-xl mt-5 mx-auto text-xl leading-7 text-gray-500">Upload any file to S3, and browse/download them.</p>
       </div>
@@ -109,13 +109,13 @@
     <div class="max-w-3xl mx-auto">
       <nav class="text-black font-bold my-8" aria-label="Breadcrumb">
         <ol class="list-none p-0 inline-flex">
-          <li class="flex items-center">
+          <!-- <li class="flex items-center">
             {#if splitPaths.length}
               <button class="border-0" on:click={() => currentPath = ''}>Root</button>
             {:else}
               You are at the root folder.
             {/if}
-          </li>
+          </li> -->
           {#each splitPaths as crumb, i}
           <li class="flex items-center">
             <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
@@ -213,7 +213,7 @@
                     {:else}
                       <tr class="bg-white" class:bg-gray-50={i % 2}>
                         <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                          This folder is empty!
+                          This S3 is empty!
                         </td>
                         <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                         </td>
