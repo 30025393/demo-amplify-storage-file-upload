@@ -1,7 +1,5 @@
 <script>
   import Main from "./Main.svelte";
-  import Login from './Login.svelte'
-  import { store } from './stores/auth.js'
 </script>
 
 <style global lang="postcss">

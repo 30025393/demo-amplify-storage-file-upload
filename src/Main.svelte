@@ -1,6 +1,5 @@
 <script>
   import { Storage } from "aws-amplify";
-  import { store as authStore, logout } from './stores/auth.js';
   import { formatBytes, processStorageList } from "./utils.js";
   import Toast from "./Toast.svelte";
   import DownloadButton from "./DownloadButton.svelte";
@@ -163,25 +162,6 @@
                       </td>
                     </tr>
                   {:else}
-                    {#each folders as folder, i}
-                      <tr class="bg-white" class:bg-gray-50={i % 2}>
-                        <td class="flex px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                          <svg class="w-6 mr-2 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                          </svg>
-                          <button class="border-0" on:click={() => currentPath += folder + '/'}>{folder}</button>
-                        </td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                          {folder.__data ? folder.__data.lastModified.toString().slice(0,24) : ''}
-                        </td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                          
-                        </td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                          <!-- <a href="#" class="text-indigo-600 hover:text-indigo-900">Delete</a> -->
-                        </td>
-                      </tr>
-                    {/each}
                     <!-- Odd row -->
                     {#each files as file, i}
                       <tr class="bg-white" class:bg-gray-50={i % 2}>
